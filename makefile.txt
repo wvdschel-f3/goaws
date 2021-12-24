@@ -22,7 +22,7 @@ linux:
 	GOOS=linux GOARCH=amd64 go build -o goaws_linux_amd64  app/cmd/goaws.go
 
 docker-release: linux
-	docker build -t pafortin/goaws .
-	docker tag pafortin/goaws pafortin/goaws:$(VERSION)
+	docker build -t wvdschel-f3/goaws .
+	docker tag wvdschel-f3/goaws wvdschel-f3/goaws:$(VERSION)
 
 
